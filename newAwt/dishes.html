@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content = "World class restaurant, amazing cuisines from around the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+   " integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==
+   " crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+    <title>Restaurants Beyond Imagination</title>
+</head>
+<body>
+    <header>
+        <div class ="main-nav">
+            <div class="logo">
+                <img src="img/new.jpg" alt="logo img">
+                </div>
+            <ul>
+                <li><a href ="home.html">Home</a></li>
+                <li><a href ="dishes.html">dishes</a></li>
+                <li><a href ="locations.html">locations</a></li>
+                <li><a href ="cooks.html">cooks</a></li>
+                <li><a href ="contact.html">contact</a></li>
+                <li><a href ="bookings.html">bookings</a></li>
+            </ul>
+        </div>
+
+      
+       
+    </header>
+
+    <div class="container">
+        <div class="description">
+           <h2>WISH UPON A DISH!!!</h2>
+                <h2 class="heading-secondary">A million cuisine</h2>
+                <p>.Khantoke refers to haunch heights, round tables 
+                    which diners usually feast around. This comnes with traditional
+                    dance and local liquors..
+                
+                    .Khantoke refers to haunch heights, round tables 
+                    which diners usually feast around. This comnes with traditional
+                    dance and local liquors.</p>                 
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card1.jpg" alt="image">
+                    </div>
+
+                    <h3 class="heading-tertiary">Asian Dim Sum dish</h3>
+                   
+                    <p>Make your date night count as you order for your amazing Asian Dim Sum.
+                        $10 per dish, you are never wrong.
+                        Book a spot and enjoy the night.
+                    </p>
+                    <button class = "btn btn-success" onClick="addAd()">Order this</button>
+                    <h4 id = "cuisine1"></h4>
+                    <button class = "btn btn-success" onClick="reset1()">New selection</button>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card2.jpg" alt="image pic9">
+                    </div>
+                    <h3 class="heading-tertiary">Indonesian Satay</h3>
+                    
+                    <p>Dive into the world of Indonesian barbecue food with tender
+                        meat pieces. Marinated, skewered and grilled over 
+                        flaming charcoals. Satay is served with deserts.
+                        
+                    </p>
+                    <button class = "btn btn-success" onClick="addIs()">Order this</button>
+                    <h4 id = "cuisine2"></h4>
+                    <button class = "btn btn-success" onClick="reset2()">New selection</button>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card3.jpg" alt="image order">
+                    </div>
+
+                    <h3 class="heading-tertiary">Thailand Khantoke Dinner</h3>
+                    
+                    <p>This traditional Northern Thai feast showcases many of
+                        Indonesian Lanna food varieties. Bites to follow includes;
+                        chilli dips, sausages, northern curries and rice.
+                    </p>
+                    <button class = "btn btn-success" onClick="addTk()">Order this</button>
+                    <h4 id = "cuisine3"></h4>
+                    <button class = "btn btn-success" onClick="reset3()">New selection</button>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card4.jpg" alt="image">
+                    </div>
+
+                    <h3 class="heading-tertiary">Momos of Himalayas</h3>
+                    <p>
+                    Himalayan meat or vegetable dumpling makes a great fast food 
+                    snack to go.Momos are served with an optional hot chili pepper sauce, 
+                    dark soy and a side of sweet soup.
+                    </p>
+
+                    <button class = "btn btn-success" onClick="addMh()">Order this</button>
+                    <h4 id = "cuisine4"></h4>
+                    <button class = "btn btn-success" onClick="reset4()">New selection</button>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card5.jpg" alt="image">
+                    </div>
+
+                    <h3 class="heading-tertiary">Candied Haws of China</h3>
+                    
+                    <p> Savour mini candy appleswith a slightly sharp sour bite.
+                        Candied haws are locally known as Bing Tanghulu 
+                        and are popular street food snack made from local Chinese 
+                        Hawthorns skewered, dipped in sugar syrup and left to harden.
+                    </p>
+                    <button class = "btn btn-success" onClick="addCh()">Order this</button>
+                    <h4 id = "cuisine5"></h4>
+                    <button class = "btn btn-success" onClick="reset5()">New selection</button>
+                </div>
+                
+                <div class="card">
+                    <div class="icon">
+                        <img src ="img/card6.jpg" alt="image">
+                    </div>
+
+                    <h3 class="heading-tertiary">Korean Kimchi</h3>
+                    
+                    <p>Beautiful looking spicy fermented vegetables are the 
+                        ketchup of Korea. While the most common Kimchi is 
+                        of pickled cappa cabbage, there are hundreds of varieities of 
+                        vegetables and seasons. Order this and have a beautiful meal
+                        
+                    </p>
+                    <button class = "btn btn-success" onClick="addKk()">Order this</button>
+                    <h4 id = "cuisine6"></h4>
+                    <button class = "btn btn-success" onClick="reset6()">New selection</button>
+                </div>   
+            </div>
+           
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="package">
+            <div class ="content">
+                <h1 class="heading-primary">Amazing dish from around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, 
+                   maiores eaque mollitia veniam maxime veritatis at architecto 
+                   enim sit recusandae psum dolor sit amet consectetur adipisicing elit. Porro, 
+                   maiores eaque mollitia veniam maxime veritatis at architecto.</p>
+                   
+                   <a href="#" class ="btn btn-primary">More info</a>
+            </div>
+
+            <div class="can-image">
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>World class</h3>
+                <p>Experience world renowned chefs treating you 
+                to amazing and mouth watering cuisines from 
+                around the major coasts of the world. 
+                An unforgettable experience like no other.
+            </p>
+
+            </div>
+    
+            <div class="box">
+                <h3>Navigation</h3>
+               <a href = "home.html">home</a>
+               <a href = "dishes.html">dishes</a>
+               <a href = "cooks.html">cooks</a>
+               <a href = "bookings.html">locations</a>
+               <a href = "locations.html">contact</a>
+               <a href = "contact.html">bookings</a>
+            </div>
+    
+            <div class="box">
+                <h3>Newsletter</h3>
+                <form action="">
+                <p>subscribe for more updates</p>
+                
+                <input type="email" class ="box" placeholder="Your Email">
+                <input type="submit" class ="btn" value="Subscribe">
+    
+              </form>
+            </div>
+    
+        </div>
+    
+        <h1 class ="creator"> Created by <a href ="#">Adeniyi Ladenegan</a>@copyright 2021</h1>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>

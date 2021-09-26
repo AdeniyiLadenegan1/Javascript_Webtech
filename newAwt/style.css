@@ -1,0 +1,489 @@
+
+
+:root {
+    --primary-color: rgb(67, 128, 59);
+    --color-yellow:  rgb(241, 207, 9);
+    --color-brown:  rgb(75, 3, 3);
+    --color-blue:  rgb(7, 191, 204);
+    --color-black: rgb(46, 38. 24);
+    --color-white: rgb(221, 221, 221);
+}
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    min-height: 100vh;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+a {
+    color: var(--color-brown);
+    text-decoration: none;
+}
+
+p{
+    color: var(--color-brown);
+    font-size: 1.6rem;
+}
+
+.mb {
+    margin-bottom: 2rem;
+
+}
+.heading-primary {
+    font-family:'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--color-yellow);
+    margin-bottom: 1rem;
+}
+
+.heading-secondary {
+    font-family:'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--color-yellow);
+    margin-bottom: 1.5rem;
+}
+
+.heading-tertiary {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-yellow);
+    margin-bottom: .5rem;
+}
+header {
+    height: 10vh;
+    display: flex;
+}
+
+.main-nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--color-blue);
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    text-transform: capitalize;
+    padding: 2rem;
+    font-size: 2rem;
+   
+}
+
+.main-nav ul li a:hover {
+    letter-spacing: 6px;
+}
+
+
+.main-nav .logo {
+    justify-content: center;
+    vertical-align: top;
+    padding-left: 5%;
+    margin: auto;
+    
+    
+}
+
+.package {
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.package-img {
+    flex: 0 0 50%;
+}
+
+.package-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.description {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card{
+    margin-top: 2rem;
+}
+
+
+
+.card .icon img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.reserve {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.reserve img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form form {
+    width: 80%;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: flex;   
+}
+
+.input50 {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.input100 {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+    font-size:  1.2rem;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: var(--color-brown);
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.container .package .content .icon{
+font-size: 3rem;
+color: #615f5f;
+padding: .7rem 0;
+background-color: rgba(0, 0, 0, 0.5);
+margin: 2rem;
+align-items: center;
+vertical-align: top;
+
+}
+
+.contact-form .row textarea {
+    height: 150px;
+}
+
+.contact-form .row input[type="submit"] {
+    background-color: var(--color-blue);
+    color: var(--color-brown);
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+.btn {
+    font-size: 1em;
+    color: var(--color-blue);
+    background:rgb(75, 3, 3);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing:2px;
+    transition: 0.5s;
+}
+
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+.newbtn a{
+font-size: 1em;
+color: var(--color-brown);
+background:rgb(155, 197, 5);
+display: inline-block;
+border-radius: 0.7em;
+padding: 10px 10px;
+margin-top: 10px;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing:2px;
+transition: 0.5s;
+}
+
+
+.newbtn a:hover{
+    letter-spacing: 6px;
+}
+
+
+#mylocation {
+    align-items: center;
+    width: 84%;
+    font-size: 4rem;
+    height: 100px;
+    border: solid rgb(1, 136, 35) 2px;
+    border-radius: 0.5em;
+    margin: 1.5em auto 1.5em auto;
+    padding-left: 5rem;
+}
+#location {
+    font-size: 2rem;
+    color: #550303;
+}
+
+main #season {  
+    font-size: 4rem;
+    color:rgb(75, 3, 3);
+    font-style:italic;
+   
+}
+.footer {
+    background: var(--color-brown);
+}
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    margin: 2rem;
+    flex: 1 1 30rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--color-yellow);
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #b39898;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    font: 1.8rem;
+    color: var(--color-blue);
+    padding: .4rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+
+}
+
+.footer .box-container .box:nth-child(2){
+    text-align: center;
+}
+
+.footer .box-container form{
+    display: flex;
+    align-items: center;
+}
+.footer .box-container form input[type="email"]{
+    height: 3rem;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+}
+
+.footer .box-container form .btn{
+    margin-top: 0;
+}
+
+.footer .box-container form .btn:hover{
+    color: #550303;
+    background: #cff7cb;
+}
+
+.footer .creator {
+    font-size: 2rem;
+    background: #89898a;
+    text-align: center;
+    color: #3d0402;
+    padding: 2rem 1rem;
+    font-weight: 300;
+}
+
+.footer .creator a {
+    font-size: 2rem;
+    color: var(--gold);
+}
+
+.fact .container2 .box1, .fact .container2 .box2 {
+    height: 400px;
+    width: 45%;
+    padding: 2rem; 
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(194, 248, 133);
+    margin: 1.5em;
+    text-align: center;
+    padding: 1.5;
+}
+
+.container2 .box1 {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #3d0402;
+}
+
+.container img{
+    align-items:center ;
+    justify-content: center; 
+    float:inline-end;
+
+}
+
+
+
+
+@media (max-width: 725px) {
+    .can-img
+     {
+        display: block;
+    }
+   
+    .container {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .content {
+        flex: 0 0 100%;
+    }
+    .main-nav {
+    position:fixed;
+    width: 100%;
+    background-color: var(--color-yellow);
+    font-size: 1.5rem;
+    align-items: center;
+    }
+
+    .main-nav ul li a {
+        text-transform: capitalize;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact-form .row {
+        flex-direction: column;        
+    }
+
+    .contact-form .input100,
+    .contact-form .input50 {
+        width: 100%;
+    }
+    .footer {
+        display: none;
+    }
+    .package,
+    .content,
+    .description {
+        display: block;
+        width: 100%;
+    }
+    .package,
+    .content,
+    .can-img {
+        display: block;
+
+    } 
+    img{
+        width:auto;
+    }
+
+.fact .container2 .box1, .fact .container2 .box2 {
+    height: 400px;
+    width: 90%;
+    display: block;
+    margin: auto auto 1.5em auto;
+    }
+
+#mylocation {
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5em;
+    justify-content: center;
+  
+}
+#location {
+    font-size: 2rem;
+ 
+}
+
+main #season { 
+    font-size: 4rem;
+    color:rgb(75, 3, 3);
+  
+   
+}
+
+}
+
+
